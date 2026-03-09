@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kirtan Rajesh — AI Engineer & Entrepreneur</title>
+  <meta name="description"
+    content="Portfolio of Kirtan Rajesh — SDE in Generative AI, IEEE Researcher, Robotics Specialist, and aspiring entrepreneur." />
+  <meta property="og:title" content="Kirtan Rajesh — AI Engineer & Entrepreneur" />
+  <meta property="og:description"
+    content="Building intelligent systems at the intersection of AI, Robotics, and Entrepreneurship." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- Scroll progress -->
+  <div id="progress-bar"></div>
+
+  <!-- Custom cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Mouse spotlight -->
+  <div id="spotlight"></div>
+
+  <!-- ═══════════════════════ HEADER ═══════════════════════ -->
+  <header id="header">
+    <div class="logo-mark">
+      <span class="logo-dot"></span>
+      Kirtan Rajesh
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+    </nav>
+    <a href="src/Kirtan_Resume%20(4).pdf" target="_blank" rel="noopener" class="nav-cta">
+      <i class="fa-regular fa-file-lines" style="font-size:.8rem;"></i>
+      Resume
+    </a>
+    <!-- Hamburger (mobile only) -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile full-screen nav -->
+  <div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#research" class="mobile-link">Research</a>
+    <a href="src/Kirtan_Resume%20(4).pdf" target="_blank" class="mobile-link mobile-nav-resume">Resume ↗</a>
+  </div>
+
+  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <section class="hero">
+    <canvas id="canvas"></canvas>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="hero-main">
+
+      <!-- Copy -->
+      <div class="hero-copy">
+        <div class="availability-pill">
+          <span class="pulse-dot"></span>
+          Available for opportunities
+        </div>
+
+        <h1 class="hero-name">
+          Building<br>
+          <span class="gradient-word">Intelligent</span><br>
+          Futures.
+        </h1>
+
+        <div class="typewriter-line">
+          I am a&nbsp;<span id="typewriter-text">Gen AI Engineer</span><span class="cursor-blink"></span>
+        </div>
+
+        <p class="hero-desc">
+          Hi, I'm <strong style="color:var(--text);font-weight:600;">Kirtan Rajesh</strong> — SDE in Generative AI,
+          IEEE-published researcher, and robotics specialist. I build intelligent systems at the intersection of AI,
+          robotics, and real-world engineering — with my eyes set on entrepreneurship.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa-solid fa-arrow-right" style="font-size:.75rem;"></i>
+            View My Work
+          </a>
+          <a href="#experience" class="btn btn-ghost">Experience</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">
+              <span class="counter" data-target="3">0</span>
+              <span class="plus">+</span>
+            </div>
+            <div class="stat-label">IEEE Publications</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">
+              <span class="counter" data-target="4">0</span>
+            </div>
+            <div class="stat-label">Internships</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">
+              <span class="counter" data-target="300">0</span>
+              <span class="plus">+</span>
+            </div>
+            <div class="stat-label">LeetCode Problems</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">
+              <span class="counter" data-target="8" data-decimal=".72">8</span>
+              <span style="font-size:1rem;color:var(--muted);">.72</span>
+            </div>
+            <div class="stat-label">CGPA / 10</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Photo -->
+      <div class="hero-photo-wrap">
+        <!-- Floating badges -->
+        <div class="float-badge fb-1">
+          <span class="fb-icon">🤖</span>
+          <div>
+            <div style="font-size:.7rem;color:var(--muted);font-weight:500;">Research</div>
+            <div style="font-size:.8rem;">NYCU Taiwan</div>
+          </div>
+        </div>
+        <div class="float-badge fb-2">
+          <span class="fb-icon">🏋️</span>
+          <div>
+            <div style="font-size:.7rem;color:var(--muted);font-weight:500;">Achievement</div>
+            <div style="font-size:.8rem;">State Champion</div>
+          </div>
+        </div>
+        <div class="float-badge fb-3">
+          <span class="fb-icon">⚡</span>
+          <div>
+            <div style="font-size:.7rem;color:var(--muted);font-weight:500;">Specialty</div>
+            <div style="font-size:.8rem;">Gen AI · LLMs</div>
+          </div>
+        </div>
+
+        <div class="photo-frame">
+          <img src="src/WhatsApp Image 2026-03-08 at 5.56.40 PM (1).jpeg" alt="Kirtan Rajesh" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Marquee strip (part of hero, scrolls with page) -->
+    <div class="marquee-strip">
+      <div class="marquee-track">
+        <span class="mi">State Powerlifting Champion</span>
+        <span class="mi">LangChain · RAG Pipelines</span>
+        <span class="mi">Robotics Research · NYCU Taiwan</span>
+        <span class="mi">IEEE Published · 3 Papers</span>
+        <span class="mi">Hiking &amp; Outdoors</span>
+        <span class="mi">Gen AI Builder</span>
+        <span class="mi">Travel &amp; Photography</span>
+        <span class="mi">FAISS Vector Search</span>
+        <span class="mi">LLM Applications</span>
+        <span class="mi">Entrepreneur in Progress</span>
+        <span class="mi">Google DSC Lead</span>
+        <span class="mi">LeetCode 300+ Problems</span>
+        <span class="mi">VIT Chennai · 8.72 CGPA</span>
+        <span class="mi">State Powerlifting Champion</span>
+        <span class="mi">LangChain · RAG Pipelines</span>
+        <span class="mi">Robotics Research · NYCU Taiwan</span>
+        <span class="mi">IEEE Published · 3 Papers</span>
+        <span class="mi">Hiking &amp; Outdoors</span>
+        <span class="mi">Gen AI Builder</span>
+        <span class="mi">Travel &amp; Photography</span>
+        <span class="mi">FAISS Vector Search</span>
+        <span class="mi">LLM Applications</span>
+        <span class="mi">Entrepreneur in Progress</span>
+        <span class="mi">Google DSC Lead</span>
+        <span class="mi">LeetCode 300+ Problems</span>
+        <span class="mi">VIT Chennai · 8.72 CGPA</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ ABOUT / SKILLS ═══════════════════════ -->
+  <div class="section-wrap">
+    <section class="inner" id="about">
+      <span class="sec-label reveal">Core Capabilities</span>
+      <h2 class="sec-title reveal d1">Built to build.</h2>
+      <div class="pills reveal d2">
+        <span class="pill">Python</span>
+        <span class="pill">Java</span>
+        <span class="pill">C++</span>
+        <span class="pill">JavaScript</span>
+        <span class="pill">React / Next.js</span>
+        <span class="pill">Flask / FastAPI</span>
+        <span class="pill">LangChain</span>
+        <span class="pill">OpenAI API</span>
+        <span class="pill">Groq AI</span>
+        <span class="pill">FAISS &amp; Vector DBs</span>
+        <span class="pill">RAG Pipelines</span>
+        <span class="pill">TensorFlow</span>
+        <span class="pill">PostgreSQL / MySQL</span>
+        <span class="pill">Docker &amp; CI/CD</span>
+        <span class="pill">Extended Kalman Filter</span>
+        <span class="pill">Robotics (C++/Java)</span>
+        <span class="pill">Computer Vision</span>
+        <span class="pill">WebSockets</span>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══════════════════════ EXPERIENCE ═══════════════════════ -->
+  <div class="section-wrap">
+    <section class="inner" id="experience">
+      <span class="sec-label reveal">Work History</span>
+      <h2 class="sec-title reveal d1">Professional <span>Experience.</span></h2>
+
+      <div class="timeline">
+
+        <div class="exp-item reveal d1">
+          <div class="exp-card">
+            <div class="exp-top">
+              <div>
+                <div class="exp-role">AI Solutions Engineer</div>
+                <div class="exp-co">BETTROI · Remote (UAE)</div>
+              </div>
+              <span class="exp-date">Nov 2025 – Jan 2026</span>
+            </div>
+            <p class="exp-body">Architected scalable REST APIs with Python/Flask and designed RAG pipelines with vector
+              databases — enabling document Q&amp;A at sub-second latency across 10K+ embeddings. FAISS-based semantic
+              search improved context retrieval by 30% over keyword baselines.</p>
+          </div>
+        </div>
+
+        <div class="exp-item reveal d2">
+          <div class="exp-card">
+            <div class="exp-top">
+              <div>
+                <div class="exp-role">Research Intern — Robotics &amp; AI</div>
+                <div class="exp-co">Hucenrotia Lab, NYCU · Hsinchu, Taiwan</div>
+              </div>
+              <span class="exp-date">Aug – Oct 2025</span>
+            </div>
+            <p class="exp-body">Developed C++/Java control software for autonomous robot simulation — 77.8% ball
+              interception accuracy. Extended Kalman Filter for real-time multi-sensor fusion and PID trajectory planner
+              cut motion-planning latency by 40%.</p>
+          </div>
+        </div>
+
+        <div class="exp-item reveal d3">
+          <div class="exp-card">
+            <div class="exp-top">
+              <div>
+                <div class="exp-role">Software Developer Intern</div>
+                <div class="exp-co">Caliber Interconnect · Bengaluru, KA</div>
+              </div>
+              <span class="exp-date">Jun – Jul 2024</span>
+            </div>
+            <p class="exp-body">Built a real-time data-visualisation dashboard with React &amp; WebSocket (ROSBridge).
+              Component refactoring using code-splitting and optimised hooks cut load time by 35%.</p>
+          </div>
+        </div>
+
+        <div class="exp-item reveal d4">
+          <div class="exp-card">
+            <div class="exp-top">
+              <div>
+                <div class="exp-role">Software Engineer Intern</div>
+                <div class="exp-co">DelaPlex Ltd. · Nagpur, MH</div>
+              </div>
+              <span class="exp-date">Aug – Sep 2023</span>
+            </div>
+            <p class="exp-body">End-to-end recommendation system (Java/Flask + MySQL). ETL pipelines with 99%+ data
+              integrity; optimised schema &amp; indexing reduced query time by 30%.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══════════════════════ PROJECTS ═══════════════════════ -->
+  <div class="section-wrap">
+    <section class="inner" id="projects">
+      <span class="sec-label reveal">Featured Work</span>
+      <h2 class="sec-title reveal d1">Selected <span>Projects.</span></h2>
+
+      <div class="proj-grid">
+
+        <article class="proj-card reveal d1">
+          <div class="card-glow"></div>
+          <span class="proj-num">01</span>
+          <div class="ptags">
+            <span class="ptag">React</span><span class="ptag">Flask</span>
+            <span class="ptag">MySQL</span><span class="ptag">Docker</span>
+          </div>
+          <h3 class="proj-name">Pulse of People</h3>
+          <p class="proj-desc">AI-powered political sentiment analytics platform processing 50K+ records. Optimised
+            MySQL caching cut API response times by 40%. Containerised microservice architecture ready for scale.</p>
+          <a href="https://github.com/Kirtan-Rajesh" target="_blank" rel="noopener" class="proj-link">
+            View on GitHub <i class="fa-solid fa-arrow-right" style="font-size:.65rem;"></i>
+          </a>
+        </article>
+
+        <article class="proj-card reveal d2">
+          <div class="card-glow"></div>
+          <span class="proj-num">02</span>
+          <div class="ptags">
+            <span class="ptag">Flask</span><span class="ptag">OpenCV</span>
+            <span class="ptag">Groq AI</span><span class="ptag">OCR</span>
+          </div>
+          <h3 class="proj-name">ScanittAI</h3>
+          <p class="proj-desc">Intelligent document management: OpenCV image preprocessing → Tesseract OCR → Groq LLM
+            extraction pipeline with full-text relational search. Production-grade architecture for enterprise document
+            workflows.</p>
+          <a href="https://github.com/Kirtan-Rajesh" target="_blank" rel="noopener" class="proj-link">
+            View on GitHub <i class="fa-solid fa-arrow-right" style="font-size:.65rem;"></i>
+          </a>
+        </article>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══════════════════════ RESEARCH ═══════════════════════ -->
+  <div class="section-wrap">
+    <section class="inner" id="research">
+      <span class="sec-label reveal">Publications</span>
+      <h2 class="sec-title reveal d1">Research &amp; <span>Publications.</span></h2>
+
+      <div class="pub-list">
+
+        <div class="pub-card reveal d1">
+          <span class="pub-n">01</span>
+          <div>
+            <p class="pub-venue">IEEE Access · 2025 · First Author · Impact Factor 3.9</p>
+            <p class="pub-title">Deep Reinforcement Learning for Urban Air Quality Management</p>
+            <p class="pub-detail">PPO-based RL framework; 3+ years of data, 1M+ points analysed; 26% AQI improvement
+              demonstrated through systematic experimentation.</p>
+          </div>
+        </div>
+
+        <div class="pub-card reveal d2">
+          <span class="pub-n">02</span>
+          <div>
+            <p class="pub-venue">IEEE ICCCNT · 2025 · First Author</p>
+            <p class="pub-title">MSHAN: Multi-Scale Hybrid Attention Network for ECG Arrhythmia Detection</p>
+            <p class="pub-detail">CNN + multi-scale attention hybrid architecture achieving 68.78% accuracy with
+              SHAP-based model interpretability.</p>
+          </div>
+        </div>
+
+        <div class="pub-card reveal d3">
+          <span class="pub-n">03</span>
+          <div>
+            <p class="pub-venue">Results in Engineering, Elsevier · 2025 · Co-Author</p>
+            <p class="pub-title">Resilient Solar Microgrid Management Using Multi-Agent Reinforcement Learning</p>
+            <p class="pub-detail">Multi-agent DQN system for adaptive solar microgrid management and optimal energy
+              dispatch.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══════════════════════ ACHIEVEMENTS ═══════════════════════ -->
+  <div class="section-wrap">
+    <section class="inner">
+      <span class="sec-label reveal">Highlights</span>
+      <h2 class="sec-title reveal d1">Beyond the <span>Code.</span></h2>
+
+      <div class="achieve-grid">
+        <div class="achieve-card reveal d1">
+          <div class="achieve-icon">🏋️</div>
+          <div class="achieve-title">State Powerlifting Champion</div>
+          <div class="achieve-sub">Competed at state-level championships. Discipline both on and off the keyboard.</div>
+        </div>
+        <div class="achieve-card reveal d2">
+          <div class="achieve-icon">🌏</div>
+          <div class="achieve-title">International Research Scholar</div>
+          <div class="achieve-sub">Selected for a fully-funded research internship at NYCU, Taiwan.</div>
+        </div>
+        <div class="achieve-card reveal d3">
+          <div class="achieve-icon">🧩</div>
+          <div class="achieve-title">Google DSC Lead</div>
+          <div class="achieve-sub">Led the Developer Student Club chapter at VIT Chennai, organising 10+ technical
+            events.</div>
+        </div>
+        <div class="achieve-card reveal d4">
+          <div class="achieve-icon">📸</div>
+          <div class="achieve-title">Travel & Photography</div>
+          <div class="achieve-sub">Documenting journeys across Asia. Exploring the world one frame at a time.</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <p class="footer-hl">Let's build<br><span>the future.</span></p>
+        <a href="mailto:kirtanrajesh@gmail.com" class="footer-mail">
+          <i class="fa-regular fa-envelope" style="font-size:.85rem;"></i>
+          kirtanrajesh@gmail.com
+        </a>
+      </div>
+      <div class="socials">
+        <a href="https://linkedin.com/in/kirtanrajesh" target="_blank" class="soc" aria-label="LinkedIn"><i
+            class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/Kirtan-Rajesh" target="_blank" class="soc" aria-label="GitHub"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="https://kirtanrajesh.netlify.app" target="_blank" class="soc" aria-label="Website"><i
+            class="fa-solid fa-globe"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Kirtan Rajesh. All rights reserved.</span>
+      <span>SDE · Gen AI · Entrepreneur</span>
+    </div>
+  </footer>
+
+  <script>
+    // ═════════════════════════════════════════
+    // TOUCH DETECTION — disable cursor effects
+    // ═════════════════════════════════════════
+    const isTouch = window.matchMedia('(hover: none)').matches || ('ontouchstart' in window);
+    if (isTouch) {
+      document.getElementById('cursor').style.display = 'none';
+      document.getElementById('cursor-ring').style.display = 'none';
+      document.getElementById('spotlight').style.display = 'none';
+      document.body.style.cursor = 'auto';
+    }
+
+    // ═════════════════════════════════════════
+    // CUSTOM CURSOR (desktop only)
+    // ═════════════════════════════════════════
+    if (!isTouch) {
+      const cursor = document.getElementById('cursor');
+      const ring = document.getElementById('cursor-ring');
+      let mx = 0, my = 0, rx = 0, ry = 0;
+      window.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+      (function loop() {
+        rx += (mx - rx) * .1; ry += (my - ry) * .1;
+        cursor.style.left = mx + 'px'; cursor.style.top = my + 'px';
+        ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+        requestAnimationFrame(loop);
+      })();
+      document.querySelectorAll('a,button,.pill,.proj-card,.exp-card,.pub-card,.achieve-card').forEach(el => {
+        el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+        el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+      });
+
+      // Spotlight
+      const spotlight = document.getElementById('spotlight');
+      window.addEventListener('mousemove', e => {
+        spotlight.style.background = `radial-gradient(600px circle at ${e.clientX}px ${e.clientY}px,
+        rgba(124,106,247,.06) 0%, transparent 70%)`;
+      });
+    }
+
+    // ═════════════════════════════════════════
+    // HAMBURGER MENU
+    // ═════════════════════════════════════════
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    function openMenu() {
+      hamburger.classList.add('open');
+      mobileNav.classList.add('open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.contains('open') ? closeMenu() : openMenu();
+    });
+    // Close on nav link click
+    document.querySelectorAll('.mobile-link').forEach(a => {
+      a.addEventListener('click', closeMenu);
+    });
+    // Close on Escape key
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+    // ═════════════════════════════════════════
+    // SCROLL PROGRESS BAR
+    // ═════════════════════════════════════════
+    const progressBar = document.getElementById('progress-bar');
+    window.addEventListener('scroll', () => {
+      const max = document.body.scrollHeight - window.innerHeight;
+      if (max > 0) progressBar.style.width = (window.scrollY / max * 100) + '%';
+    }, { passive: true });
+
+    // ═════════════════════════════════════════
+    // HEADER SHRINK ON SCROLL
+    // ═════════════════════════════════════════
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.style.height = window.scrollY > 60 ? '56px' : '';
+    }, { passive: true });
+
+    // ═════════════════════════════════════════
+    // PARTICLE CANVAS
+    // ═════════════════════════════════════════
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    let W, H;
+    const isMobile = window.innerWidth < 768;
+    const PARTICLE_COUNT = isMobile ? 35 : 80;
+    let particles = [];
+
+    function resizeCanvas() {
+      W = canvas.width = canvas.parentElement.offsetWidth;
+      H = canvas.height = canvas.parentElement.offsetHeight;
+    }
+    resizeCanvas();
+    window.addEventListener('resize', () => { resizeCanvas(); }, { passive: true });
+    window.addEventListener('orientationchange', () => {
+      setTimeout(resizeCanvas, 200); // small delay for OS to finish rotating
+    });
+
+    class Particle {
+      constructor() { this.reset(true); }
+      reset(initial) {
+        this.x = Math.random() * W;
+        this.y = initial ? Math.random() * H : (Math.random() > 0.5 ? -5 : H + 5);
+        this.vx = (Math.random() - .5) * .35;
+        this.vy = (Math.random() - .5) * .35;
+        this.r = Math.random() * 1.4 + .4;
+        this.alpha = Math.random() * .35 + .08;
+      }
+      update() {
+        this.x += this.vx; this.y += this.vy;
+        if (this.x < -10 || this.x > W + 10 || this.y < -10 || this.y > H + 10) this.reset(false);
+      }
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(124,106,247,${this.alpha})`;
+        ctx.fill();
+      }
+    }
+
+    for (let i = 0; i < PARTICLE_COUNT; i++) particles.push(new Particle());
+
+    let rafId;
+    function drawParticles() {
+      ctx.clearRect(0, 0, W, H);
+      const maxDist = isMobile ? 100 : 130;
+      particles.forEach(p => { p.update(); p.draw(); });
+      if (!isMobile) {
+        for (let i = 0; i < particles.length; i++) {
+          for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < maxDist) {
+              ctx.beginPath();
+              ctx.strokeStyle = `rgba(124,106,247,${.07 * (1 - dist / maxDist)})`;
+              ctx.lineWidth = .5;
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.stroke();
+            }
+          }
+        }
+      }
+      rafId = requestAnimationFrame(drawParticles);
+    }
+    drawParticles();
+
+    // Pause canvas when tab is hidden (battery saving)
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) cancelAnimationFrame(rafId);
+      else drawParticles();
+    });
+
+    // ═════════════════════════════════════════
+    // TYPEWRITER
+    // ═════════════════════════════════════════
+    const roles = ['Gen AI Engineer', 'IEEE Researcher', 'Robotics Specialist', 'LLM Builder', 'Entrepreneur'];
+    let ri = 0, ci = 0, deleting = false, twTimer = null;
+    const tw = document.getElementById('typewriter-text');
+
+    function type() {
+      if (!tw) return;
+      const word = roles[ri];
+      if (!deleting) {
+        tw.textContent = word.slice(0, ++ci);
+        if (ci === word.length) { deleting = true; twTimer = setTimeout(type, 1800); return; }
+      } else {
+        tw.textContent = word.slice(0, --ci);
+        if (ci === 0) { deleting = false; ri = (ri + 1) % roles.length; }
+      }
+      twTimer = setTimeout(type, deleting ? 48 : 88);
+    }
+    twTimer = setTimeout(type, 900);
+
+    // ═════════════════════════════════════════
+    // ANIMATED COUNTERS
+    // ═════════════════════════════════════════
+    function animateCounter(el) {
+      const target = +el.dataset.target;
+      const duration = 1600;
+      const startTime = performance.now();
+      function update(now) {
+        const t = Math.min((now - startTime) / duration, 1);
+        const eased = 1 - Math.pow(1 - t, 3);
+        el.textContent = Math.floor(eased * target);
+        if (t < 1) requestAnimationFrame(update);
+        else el.textContent = target;
+      }
+      requestAnimationFrame(update);
+    }
+
+    const statObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('.counter').forEach(animateCounter);
+          statObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: .5 });
+    const statsEl = document.querySelector('.hero-stats');
+    if (statsEl) statObs.observe(statsEl);
+
+    // ═════════════════════════════════════════
+    // CARD MOUSE-GLOW (desktop only)
+    // ═════════════════════════════════════════
+    if (!isTouch) {
+      document.querySelectorAll('.proj-card').forEach(card => {
+        const glow = card.querySelector('.card-glow');
+        if (!glow) return;
+        card.addEventListener('mousemove', e => {
+          const rect = card.getBoundingClientRect();
+          glow.style.left = (e.clientX - rect.left) + 'px';
+          glow.style.top = (e.clientY - rect.top) + 'px';
+        });
+      });
+    }
+
+    // ═════════════════════════════════════════
+    // SCROLL REVEAL
+    // ═════════════════════════════════════════
+    const revealObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          revealObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+  </script>
+</body>
+
+</html>

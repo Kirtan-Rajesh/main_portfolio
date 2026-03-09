@@ -1,0 +1,70 @@
+Kirtan Rajesh
++91-9422102188 kirtanrajesh@gmail.com linkedin.com/in/kirtanrajesh github.com/Kirtan-Rajesh
+kirtanrajesh.netlify.app
+Education
+Vellore Institute of Technology, Chennai2021 – 2025
+B.Tech. Computer Science and Engineering (Specialization: AI & Robotics) CGPA: 8.72/10.0
+•Relevant Coursework:Data Structures & Algorithms, OOP, DBMS, Software Engineering, Distributed Systems
+Work Experience
+BETTROI November 2025 – January 2026
+AI Solutions Engineer (Remote) United Arab Emirates
+•Designed and implemented scalable REST API services using Python/Flask; architected Retrieval Augmented Generation
+(RAG) pipelines with vector databases, enabling document Q&A at sub-second latency across 10K+ document embeddings
+•Built modular, microservice-style LLM application architecture integrating multiple AI APIs (OpenAI, Groq); implemented
+FAISS-based semantic search and embedding pipelines, improving context retrieval accuracy by 30% over keyword-based
+approaches
+Hucenrotia Lab, National Yang Ming Chiao Tung UniversityAugust 2025 – October 2025
+Research Intern – Robotics & AI NYCU Hsinchu, Taiwan
+•Developed high-performance control software in C++ and Java for autonomous robot simulation, achieving 77.8% ball
+interception accuracy; applied SDLC best practices with modular code architecture and clean component interfaces enabling
+parallel team development
+•Implemented Extended Kalman Filter for real-time multi-sensor data fusion (camera and position data); engineered
+PID-controlled trajectory planning system and inverse kinematics solver, reducing motion planning latency by 40%
+Caliber Interconnect June 2024 – July 2024
+Software Developer Intern Bengaluru, Karnataka
+•Built real-time data visualization and control dashboard using React and WebSocket protocol (ROSBridge), enabling
+low-latency bidirectional communication between a React frontend and distributed robot simulation backend
+•Improved frontend performance and scalability through component refactoring, code-splitting, and efficient state
+management using React hooks, reducing unnecessary re-renders and improving load time by 35%
+DelaPlex Ltd.August 2023 – September 2023
+Software Engineer Intern Nagpur, Maharashtra
+•Built end-to-end recommendation system with Java/Flask REST API backend and MySQL relational database; designed
+normalized database schema with optimized SQL queries and indexing strategies, reducing average query execution time by
+30%
+•Engineered ETL data processing pipelines to ingest, validate, and transform user interaction datasets; implemented robust
+data quality checks and error handling ensuring 99%+ data integrity across pipeline workflows
+Software Development Projects
+Pulse of People – AI-Powered Sentiment Analytics Platform|React, Flask, MySQL, Docker
+•Developed full-stack political analytics application processing 50K+ sentiment records; architected MySQL relational
+database with efficient indexing, optimized SQL queries, and server-side caching, achieving 40% reduction in API response
+times
+•Implemented containerized microservice deployment using Docker; designed RESTful API layer with clear separation of
+concerns between data processing, business logic, and presentation tiers
+ScanittAI – Intelligent Document Management System|Flask, React, OpenCV, SQL, Groq AI
+•Built production-grade document processing system with Flask REST API, OpenCV image preprocessing pipeline, and
+Tesseract OCR; designed relational database schema for document metadata with full-text search capabilities
+Publications & Research
+[First Author]Deep Reinforcement Learning for Urban Air Quality Management – IEEE Access, 2025 (IF: 3.9). Designed
+PPO-based RL framework; conducted comprehensive data analysis on 3+ years of datasets with 1M+ data points; achieved
+26% AQI improvement through systematic experimentation.
+[First Author]MSHAN: Multi-Scale Hybrid Attention Network for ECG Arrhythmia Detection – IEEE ICCCNT, 2025.
+Developed hybrid deep learning architecture combining CNNs and attention mechanisms; achieved 68.78% accuracy with
+SHAP interpretability analysis.
+[Co-Author]Resilient Solar Microgrid Management Using Multi-Agent RL – Results in Engineering, Elsevier, 2025.
+Contributed to multi-agent RL system design using DQN.
+Technical Skills
+Languages:Java, Python, C++, SQL, JavaScript
+Frameworks & APIs:Spring Boot (familiar), React, Flask, Node.js, REST APIs, HTML/CSS
+Databases:MySQL, PostgreSQL, MongoDB, Redis; relational schema design & query optimization
+Infrastructure & Tools:Docker, Git, CI/CD (GitHub Actions), Linux/Unix, Postman
+AI/ML:LangChain, OpenAI API, TensorFlow, Scikit-learn, FAISS, RAG systems
+Leadership & Achievements
+Google Developers Student Club– Management Team Lead: Organized 3 national hackathons with 200+ participants
+LeetCode Profile:Solved 300+ problems focusing on algorithms, data structures and system design
+State Powerlifting Champion:#1 VIT Chennai, #12 Tamil Nadu (2023–24)
+Certifications
+Generative AI Fundamentals– Databricks
+Supervised Machine Learning: Regression and Classification– Coursera
+The Complete Full-Stack Web Development Bootcamp– Udemy
+Recommender Systems and Deep Learning in Python– Udemy
+TensorFlow Developer Certificate– Udemy
