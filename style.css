@@ -1157,12 +1157,54 @@ h1.hero-name {
     margin-top: 40px;
 }
 
-/* Interests Tree */
+/* Interests Tree (removed/unused, retained for legacy) */
 .interests-tree {
     margin-top: 40px;
     display: flex;
     justify-content: center;
 }
+
+/* Interests Grid */
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.interest-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 8px;
+    padding: 14px 12px;
+    text-align: center;
+    transition: all 0.3s var(--ease);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.interest-card:hover {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.15);
+    transform: translateY(-2px);
+}
+
+.interest-emoji {
+    font-size: 1.8rem;
+    display: block;
+}
+
+.interest-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--muted);
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+}
+
 
 .tree-container {
     position: relative;
@@ -1376,56 +1418,64 @@ h1.hero-name {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
 }
 
 .contact-item {
-    background: var(--bg2);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 24px;
+    background: rgba(255,255,255,0.035);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 8px;
+    padding: 12px 10px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px;
     transition: all 0.3s var(--ease);
+    min-height: auto;
 }
 
 .contact-item:hover {
-    border-color: rgba(255,255,255,0.15);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
-    transform: translateY(-2px);
+    border-color: rgba(255,255,255,0.12);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transform: translateY(-1px);
 }
 
 .contact-icon {
-    font-size: 2rem;
-    width: 60px;
-    height: 60px;
+    font-size: 1.6rem;
+    width: 36px;
+    height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255,255,255,0.05);
-    border-radius: 12px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 6px;
     align-self: flex-start;
+    color: var(--text);
+}
+
+.logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .contact-info h4 {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 0.88rem;
+    font-weight: 600;
     color: var(--text);
-    margin-bottom: 4px;
+    margin-bottom: 1px;
 }
 
 .contact-info p {
-    font-size: 0.9rem;
+    font-size: 0.72rem;
     color: var(--muted);
-    margin-bottom: 8px;
-    line-height: 1.4;
+    margin-bottom: 3px;
+    line-height: 1.2;
 }
 
 .response-time {
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     color: var(--green);
     font-weight: 500;
 }
@@ -1433,14 +1483,14 @@ h1.hero-name {
 .contact-action {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 12px 20px;
-    background: rgba(255,255,255,0.1);
+    gap: 6px;
+    padding: 8px 12px;
+    background: rgba(255,255,255,0.08);
     color: var(--text);
     text-decoration: none;
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 8px;
-    font-size: 0.9rem;
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 6px;
+    font-size: 0.75rem;
     font-weight: 500;
     transition: all 0.3s var(--ease);
     align-self: flex-start;
@@ -1575,10 +1625,38 @@ footer {
 .footer-top {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: 40px;
     flex-wrap: wrap;
     margin-bottom: 52px;
+}
+
+.footer-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-right {
+    flex: 1;
+    min-width: 400px;
+}
+
+.footer-contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-contact-link {
+    font-size: 0.95rem;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.3s var(--ease);
+    width: fit-content;
+}
+
+.footer-contact-link:hover {
+    color: var(--text);
 }
 
 .footer-hl {
