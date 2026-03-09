@@ -19,10 +19,6 @@
   <!-- Scroll progress -->
   <div id="progress-bar"></div>
 
-  <!-- Custom cursor -->
-  <div id="cursor"></div>
-  <div id="cursor-ring"></div>
-
   <!-- Mouse spotlight -->
   <div id="spotlight"></div>
 
@@ -34,9 +30,11 @@
     </div>
     <nav>
       <a href="#about">About</a>
+      <a href="#outside">Interests</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#research">Research</a>
+      <a href="#contact">Contact</a>
     </nav>
     <a href="src/Kirtan_Resume%20(4).pdf" target="_blank" rel="noopener" class="nav-cta">
       <i class="fa-regular fa-file-lines" style="font-size:.8rem;"></i>
@@ -51,9 +49,11 @@
   <!-- Mobile full-screen nav -->
   <div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true">
     <a href="#about" class="mobile-link">About</a>
+    <a href="#outside" class="mobile-link">Interests</a>
     <a href="#experience" class="mobile-link">Experience</a>
     <a href="#projects" class="mobile-link">Projects</a>
     <a href="#research" class="mobile-link">Research</a>
+    <a href="#contact" class="mobile-link">Contact</a>
     <a href="src/Kirtan_Resume%20(4).pdf" target="_blank" class="mobile-link mobile-nav-resume">Resume ↗</a>
   </div>
 
@@ -188,6 +188,11 @@
         <span class="mi">LeetCode 300+ Problems</span>
         <span class="mi">VIT Chennai · 8.72 CGPA</span>
       </div>
+
+      <!-- Floating ocean particles -->
+      <div class="particle-1"></div>
+      <div class="particle-2"></div>
+      <div class="particle-3"></div>
     </div>
   </section>
 
@@ -219,6 +224,8 @@
     </section>
   </div>
 
+
+
   <!-- ═══════════════════════ EXPERIENCE ═══════════════════════ -->
   <div class="section-wrap">
     <section class="inner" id="experience">
@@ -228,6 +235,19 @@
       <div class="timeline">
 
         <div class="exp-item reveal d1">
+          <div class="exp-card">
+            <div class="exp-top">
+              <div>
+                <div class="exp-role">Software Engineer — Gen AI Team</div>
+                <div class="exp-co">Cybage Software · Pune, MH</div>
+              </div>
+              <span class="exp-date">Feb 2026 – Present</span>
+            </div>
+            <p class="exp-body">Leading development of generative AI solutions and large language model applications. Building scalable AI systems with focus on production deployment, model optimization, and enterprise-grade AI workflows.</p>
+          </div>
+        </div>
+
+        <div class="exp-item reveal d2">
           <div class="exp-card">
             <div class="exp-top">
               <div>
@@ -374,57 +394,142 @@
     </section>
   </div>
 
-  <!-- ═══════════════════════ ACHIEVEMENTS ═══════════════════════ -->
+  <!-- ═══════════════════════ OUTSIDE WORK ═══════════════════════ -->
   <div class="section-wrap">
-    <section class="inner">
-      <span class="sec-label reveal">Highlights</span>
-      <h2 class="sec-title reveal d1">Beyond the <span>Code.</span></h2>
+    <section class="inner" id="outside">
+      <span class="sec-label reveal">Beyond Code</span>
+      <h2 class="sec-title reveal d1">Life <span>Outside Work.</span></h2>
 
-      <div class="achieve-grid">
-        <div class="achieve-card reveal d1">
-          <div class="achieve-icon">🏋️</div>
-          <div class="achieve-title">State Powerlifting Champion</div>
-          <div class="achieve-sub">Competed at state-level championships. Discipline both on and off the keyboard.</div>
-        </div>
-        <div class="achieve-card reveal d2">
-          <div class="achieve-icon">🌏</div>
-          <div class="achieve-title">International Research Scholar</div>
-          <div class="achieve-sub">Selected for a fully-funded research internship at NYCU, Taiwan.</div>
-        </div>
-        <div class="achieve-card reveal d3">
-          <div class="achieve-icon">🧩</div>
-          <div class="achieve-title">Google DSC Lead</div>
-          <div class="achieve-sub">Led the Developer Student Club chapter at VIT Chennai, organising 10+ technical
-            events.</div>
-        </div>
-        <div class="achieve-card reveal d4">
-          <div class="achieve-icon">📸</div>
-          <div class="achieve-title">Travel & Photography</div>
-          <div class="achieve-sub">Documenting journeys across Asia. Exploring the world one frame at a time.</div>
+      <!-- Interests Tree -->
+      <div class="interests-tree reveal d2">
+        <div class="tree-container">
+          <!-- Main trunk -->
+          <div class="tree-trunk"></div>
+
+          <!-- Branches -->
+          <div class="tree-branch branch-1">
+            <div class="branch-line"></div>
+            <div class="interest-node">
+              <div class="node-emoji">🏔️</div>
+              <div class="node-text">Trekking & Hiking</div>
+            </div>
+          </div>
+
+          <div class="tree-branch branch-2">
+            <div class="branch-line"></div>
+            <div class="interest-node">
+              <div class="node-emoji">🔧</div>
+              <div class="node-text">Building Projects</div>
+            </div>
+          </div>
+
+          <div class="tree-branch branch-3">
+            <div class="branch-line"></div>
+            <div class="interest-node">
+              <div class="node-emoji">✈️</div>
+              <div class="node-text">Travel & Photography</div>
+            </div>
+          </div>
+
+          <div class="tree-branch branch-4">
+            <div class="branch-line"></div>
+            <div class="interest-node">
+              <div class="node-emoji">💪</div>
+              <div class="node-text">Working Out</div>
+            </div>
+          </div>
+
+          <div class="tree-branch branch-5">
+            <div class="branch-line"></div>
+            <div class="interest-node">
+              <div class="node-emoji">⚽</div>
+              <div class="node-text">Sports</div>
+            </div>
+          </div>
+
+          <div class="tree-branch branch-6">
+            <div class="branch-line"></div>
+            <div class="interest-node">
+              <div class="node-emoji">🚀</div>
+              <div class="node-text">Entrepreneurship</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </div>
 
+  <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+  <div class="section-wrap">
+    <section class="inner" id="contact">
+      <span class="sec-label reveal">Get In Touch</span>
+      <h2 class="sec-title reveal d1">Let's <span>Connect.</span></h2>
+
+      <!-- Contact Methods -->
+      <div class="contact-methods reveal d2">
+        <div class="contact-grid">
+          <div class="contact-item">
+            <div class="contact-icon">✉</div>
+            <div class="contact-info">
+              <h4>Email</h4>
+              <p>kirtanrajesh@gmail.com</p>
+              <span class="response-time">Response: &lt;2 hours</span>
+            </div>
+            <a href="mailto:kirtanrajesh@gmail.com" class="contact-action">Send Message</a>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">💼</div>
+            <div class="contact-info">
+              <h4>LinkedIn</h4>
+              <p>Professional Network</p>
+              <span class="response-time">Response: &lt;4 hours</span>
+            </div>
+            <a href="https://linkedin.com/in/kirtanrajesh" target="_blank" class="contact-action">Connect</a>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">⚡</div>
+            <div class="contact-info">
+              <h4>GitHub</h4>
+              <p>Code & Projects</p>
+              <span class="response-time">Response: &lt;12 hours</span>
+            </div>
+            <a href="https://github.com/Kirtan-Rajesh" target="_blank" class="contact-action">View Profile</a>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-info">
+              <h4>Phone</h4>
+              <p>Urgent Matters Only</p>
+              <span class="response-time">Response: Immediate</span>
+            </div>
+            <a href="tel:+91-XXXXXXXXXX" class="contact-action">Call Now</a>
+          </div>
   <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
   <footer>
     <div class="footer-top">
       <div>
         <p class="footer-hl">Let's build<br><span>the future.</span></p>
-        <a href="mailto:kirtanrajesh@gmail.com" class="footer-mail">
-          <i class="fa-regular fa-envelope" style="font-size:.85rem;"></i>
-          kirtanrajesh@gmail.com
-        </a>
+        <div class="footer-links">
+          <a href="mailto:kirtanrajesh@gmail.com" class="footer-link">
+            <i class="fa-regular fa-envelope"></i>
+            kirtanrajesh@gmail.com
+          </a>
+          <div class="social-links">
+            <a href="https://linkedin.com/in/kirtanrajesh" target="_blank" class="social-link" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://instagram.com/kirtanrajesh" target="_blank" class="social-link" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://x.com/kirtanrajesh" target="_blank" class="social-link" aria-label="X (Twitter)">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="socials">
-        <a href="https://linkedin.com/in/kirtanrajesh" target="_blank" class="soc" aria-label="LinkedIn"><i
-            class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://github.com/Kirtan-Rajesh" target="_blank" class="soc" aria-label="GitHub"><i
-            class="fa-brands fa-github"></i></a>
-        <a href="https://kirtanrajesh.netlify.app" target="_blank" class="soc" aria-label="Website"><i
-            class="fa-solid fa-globe"></i></a>
-      </div>
-    </div>
     <div class="footer-bottom">
       <span>© 2026 Kirtan Rajesh. All rights reserved.</span>
       <span>SDE · Gen AI · Entrepreneur</span>
@@ -444,29 +549,24 @@
     }
 
     // ═════════════════════════════════════════
-    // CUSTOM CURSOR (desktop only)
+    // HOVER EFFECTS & SPOTLIGHT
     // ═════════════════════════════════════════
     if (!isTouch) {
-      const cursor = document.getElementById('cursor');
-      const ring = document.getElementById('cursor-ring');
-      let mx = 0, my = 0, rx = 0, ry = 0;
-      window.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-      (function loop() {
-        rx += (mx - rx) * .1; ry += (my - ry) * .1;
-        cursor.style.left = mx + 'px'; cursor.style.top = my + 'px';
-        ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
-        requestAnimationFrame(loop);
-      })();
-      document.querySelectorAll('a,button,.pill,.proj-card,.exp-card,.pub-card,.achieve-card').forEach(el => {
+      document.querySelectorAll('a,button,.pill,.proj-card,.exp-card,.pub-card,.outside-card').forEach(el => {
         el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
         el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
       });
 
-      // Spotlight
+      // Spotlight - optimized
       const spotlight = document.getElementById('spotlight');
+      let spotlightTimeout;
       window.addEventListener('mousemove', e => {
+        clearTimeout(spotlightTimeout);
         spotlight.style.background = `radial-gradient(600px circle at ${e.clientX}px ${e.clientY}px,
-        rgba(124,106,247,.06) 0%, transparent 70%)`;
+        rgba(255,255,255,.04) 0%, transparent 70%)`;
+        spotlightTimeout = setTimeout(() => {
+          spotlight.style.background = 'none';
+        }, 100);
       });
     }
 
@@ -552,7 +652,7 @@
       draw() {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(124,106,247,${this.alpha})`;
+        ctx.fillStyle = `rgba(255,255,255,${this.alpha})`;
         ctx.fill();
       }
     }
@@ -572,7 +672,7 @@
             const dist = Math.sqrt(dx * dx + dy * dy);
             if (dist < maxDist) {
               ctx.beginPath();
-              ctx.strokeStyle = `rgba(124,106,247,${.07 * (1 - dist / maxDist)})`;
+              ctx.strokeStyle = `rgba(255,255,255,${.07 * (1 - dist / maxDist)})`;
               ctx.lineWidth = .5;
               ctx.moveTo(particles[i].x, particles[i].y);
               ctx.lineTo(particles[j].x, particles[j].y);
@@ -653,6 +753,19 @@
           glow.style.top = (e.clientY - rect.top) + 'px';
         });
       });
+
+      // add tilt effect to outside/outside-card items
+      document.querySelectorAll('.outside-card').forEach(card => {
+        card.addEventListener('mousemove', e => {
+          const rect = card.getBoundingClientRect();
+          const x = (e.clientX - rect.left) / rect.width - 0.5;
+          const y = (e.clientY - rect.top) / rect.height - 0.5;
+          card.style.transform = `perspective(600px) rotateX(${ -y * 6 }deg) rotateY(${ x * 6 }deg)`;
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = '';
+        });
+      });
     }
 
     // ═════════════════════════════════════════
@@ -667,6 +780,83 @@
       });
     }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+    // ═════════════════════════════════════════
+    // BAR CHART ANIMATION
+    // ═════════════════════════════════════════
+    const barObs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const bars = entry.target.querySelectorAll('.bar-fill');
+          bars.forEach((bar, index) => {
+            setTimeout(() => {
+              bar.style.width = bar.style.width; // Trigger animation
+            }, index * 200);
+          });
+          barObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    const vizContainer = document.querySelector('.viz-container');
+    if (vizContainer) barObs.observe(vizContainer);
+
+    // ═════════════════════════════════════════
+    // SCROLL ANIMATIONS - PARALLAX & TEXT EFFECTS
+    // ═════════════════════════════════════════
+    let scrollY = 0;
+    let ticking = false;
+
+    function updateScrollAnimations() {
+      const scrolled = window.scrollY;
+      const rate = scrolled * -0.5;
+
+      // Parallax effect on hero elements
+      const heroName = document.querySelector('.hero-name');
+      const heroDesc = document.querySelector('.hero-desc');
+      const heroActions = document.querySelector('.hero-actions');
+
+      if (heroName) heroName.style.transform = `translateY(${rate * 0.1}px)`;
+      if (heroDesc) heroDesc.style.transform = `translateY(${rate * 0.05}px)`;
+      if (heroActions) heroActions.style.transform = `translateY(${rate * 0.02}px)`;
+
+      // Text reveal on scroll for section titles
+      const sectionTitles = document.querySelectorAll('.sec-title');
+      sectionTitles.forEach(title => {
+        const rect = title.getBoundingClientRect();
+        const scrollPercent = Math.max(0, Math.min(1, (window.innerHeight - rect.top) / window.innerHeight));
+        const translateY = (1 - scrollPercent) * 30;
+        const opacity = Math.min(1, scrollPercent + 0.3);
+        title.style.transform = `translateY(${translateY}px)`;
+        title.style.opacity = opacity;
+      });
+
+      // Staggered card animations
+      const cards = document.querySelectorAll('.outside-card, .contact-card, .proj-card');
+      cards.forEach((card, index) => {
+        const rect = card.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+        if (isVisible) {
+          const delay = index * 0.1;
+          card.style.animationDelay = `${delay}s`;
+          card.classList.add('animate-in');
+        }
+      });
+
+      ticking = false;
+    }
+
+    function requestTick() {
+      if (!ticking) {
+        requestAnimationFrame(updateScrollAnimations);
+        ticking = true;
+      }
+    }
+
+    window.addEventListener('scroll', requestTick, { passive: true });
+
+    // Initial call
+    updateScrollAnimations();
   </script>
 </body>
 
